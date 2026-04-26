@@ -1,6 +1,7 @@
 export type Player = {
   name: string,
   ping?: number,
+  playerIp?: string;
 };
 
 export type Server = {

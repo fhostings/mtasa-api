@@ -85,7 +85,8 @@ As [MTA](https://mtasa.com) doesn't have a proper API to fetch server informatio
         "players": [
             {
                 "name": string,
-                "ping": number
+                "ping": number,
+                "ip": string
             },
             ...
         ]

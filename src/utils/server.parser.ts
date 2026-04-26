@@ -44,11 +44,12 @@ export class ServerParser extends Parser {
       player.name = this.readString();
 
       this.seek(this.position + this.read()); // skip team
+
       this.seek(this.position + this.read()); // skip skin
       this.seek(this.position + this.read()); // skip "score"
 
       player.ping = Number(this.readString());
-
+      
       this.seek(this.position + this.read()); // skip time
 
       result.players.push(player);
@@ -57,3 +58,4 @@ export class ServerParser extends Parser {
     return result;
   }
 }
+

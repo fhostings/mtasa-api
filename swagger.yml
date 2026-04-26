@@ -74,6 +74,8 @@ components:
           type: string
         ping:
           type: number
+        playerIp:
+          type: string
     Server:
       type: object
       properties:
